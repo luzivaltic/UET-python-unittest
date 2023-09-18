@@ -9,7 +9,7 @@ Hóa đơn hơn 100 thì tích được 1 điểm. Đủ 5 điểm thì lần mu
 Mặc dù test pass hết nhưng bộ test không bắt được trường hợp
 
 ```python
-	accumulated_points = 4
+    accumulated_points = 4
     bill = 150
     self.assertEqual(shopping(accumulated_points, bill), '+1 accumulated point')
 ```
