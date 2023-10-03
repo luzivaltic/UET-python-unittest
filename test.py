@@ -75,3 +75,13 @@ class TestShopping(unittest.TestCase):
         accumulated_points = 10
         bill = 1150
         self.assertEqual(shopping(accumulated_points, bill), '+1 accumulated point')
+
+    def c2_test(self):
+        accumulated_points = -100
+        bill = -1000
+        self.assertEqual(shopping(accumulated_points, bill), 'Invalid input')
+
+        accumulated_points = 100
+        bill = 999
+        self.assertEqual(shopping(accumulated_points, bill), 'You got a 10% bill discount')
+        
